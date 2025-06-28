@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Your Pet</title>
+  <link rel="stylesheet" href="../css/vet_app.css" />
+</head>
+<body>
+  <header>
+    <h1>Happy Paws Veterinary Clinic</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adoption.html">Pet Adoption</a></li>
+        <li><a href="vaccination.html">Vaccination</a></li>
+        <li><a href="appointment.php">Book Appointment</a></li>
+        <li><a href="register.html">Register Your Pet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Register Your Pet</h2>
+      <form action="#" method="post">
+        <label for="owner-name">Owner's Name:</label><br />
+        <input type="text" id="owner-name" name="owner-name" required><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required><br /><br />
+
+        <label for="pet-name">Pet's Name:</label><br />
+        <input type="text" id="pet-name" name="pet-name" required><br /><br />
+
+        <label for="pet-type">Pet Type:</label><br />
+        <select id="pet-type" name="pet-type" required>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bird">Bird</option>
+          <option value="other">Other</option>
+        </select><br /><br />
+
+        <label for="breed">Breed:</label><br />
+        <input type="text" id="breed" name="breed"><br /><br />
+
+        <label for="age">Age (in years):</label><br />
+        <input type="number" id="age" name="age" min="0"><br /><br />
+
+        <label for="notes">Additional Notes:</label><br />
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br /><br />
+
+        <input type="submit" value="Register Pet">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Happy Paws Veterinary Clinic. All rights reserved.</p>
+  </footer>
+</body>
+</html>
