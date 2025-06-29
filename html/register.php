@@ -1,3 +1,31 @@
+<?php
+require_once '../db/db_connect.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $owner_name = $_POST["owner-name"];
+    $email = $_POST["email"];
+    $pet_name = $_POST["pet-name"];
+    $pet_type = $_POST["pet-type"];
+    $breed = $_POST["breed"];
+    $age = $_POST["age"];
+    $notes = $_POST["notes"];
+
+    // Prepare the SQL query
+    $stmt = $conn->prepare("INSERT INTO pets (owner_name, email, pet_name, pet_type, breed, age, notes) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssis", $owner_name, $email, $pet_name, $pet_type, $breed, $age, $notes);
+
+    if ($stmt->execute()) {
+        echo "<p>Pet registered successfully!</p>";
+    } else {
+        echo "<p>Error: " . $stmt->error . "</p>";
+    }
+
+    $stmt->close();
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
