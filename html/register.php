@@ -39,7 +39,7 @@ $conn->close();
     <h1>Happy Paws Veterinary Clinic</h1>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="main.php">Home</a></li>
         <li><a href="adoption.php">Pet Adoption</a></li>
         <li><a href="vaccination.php">Vaccination</a></li>
         <li><a href="appoinment.php">Book Appointment</a></li>
