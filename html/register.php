@@ -23,18 +23,19 @@
   <main>
     <section>
       <h2>Register Your Pet</h2>
-      <form action="#" method="post">
+      <form id="register-form" action="#" method="post" novalidate>
         <label for="owner-name">Owner's Name:</label><br />
-        <input type="text" id="owner-name" name="owner-name" required><br /><br />
+        <input type="text" id="owner-name" name="owner-name"><br /><br />
 
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required><br /><br />
+        <input type="text" id="email" name="email"><br /><br />
 
         <label for="pet-name">Pet's Name:</label><br />
-        <input type="text" id="pet-name" name="pet-name" required><br /><br />
+        <input type="text" id="pet-name" name="pet-name"><br /><br />
 
         <label for="pet-type">Pet Type:</label><br />
-        <select id="pet-type" name="pet-type" required>
+        <select id="pet-type" name="pet-type">
+          <option value="">--Select--</option>
           <option value="dog">Dog</option>
           <option value="cat">Cat</option>
           <option value="bird">Bird</option>
@@ -58,5 +59,54 @@
   <footer>
     <p>&copy; 2025 Happy Paws Veterinary Clinic. All rights reserved.</p>
   </footer>
+
+  <!-- validation part -->
+  <script>
+    function validateForm(event) {
+      var owner = document.getElementById('owner-name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var petName = document.getElementById('pet-name').value.trim();
+      var petType = document.getElementById('pet-type').value;
+      var age = document.getElementById('age').value;
+
+      if (owner === "") {
+        alert("Owner's Name is required.");
+        event.preventDefault();
+        return false;
+      }
+      if (email === "") {
+        alert("Email is required.");
+        event.preventDefault();
+        return false;
+      }
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault();
+        return false;
+      }
+      if (petName === "") {
+        alert("Pet's Name is required.");
+        event.preventDefault();
+        return false;
+      }
+      if (petType === "") {
+        alert("Pet Type is required.");
+        event.preventDefault();
+        return false;
+      }
+      if (age !== "" && (isNaN(age) || age < 0)) {
+        alert("Please enter a valid age (0 or greater).");
+        event.preventDefault();
+        return false;
+      }
+      // All validations passed
+      return true;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('register-form').addEventListener('submit', validateForm);
+    });
+  </script>
 </body>
 </html>
