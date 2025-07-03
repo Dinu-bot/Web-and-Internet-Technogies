@@ -28,18 +28,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
             <title>Appointment Booking - Error</title>
             <link rel='stylesheet' href='../css/vet_app.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
         </head>
         <body>
             <header>
                 <h1>Happy Paws Veterinary Clinic</h1>
                 <nav>
                     <ul>
-                        <li><a href="main.php"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="adoption.php"><i class="fas fa-heart"></i> Pet Adoption</a></li>
-                        <li><a href="vaccination.php"><i class="fas fa-syringe"></i> Vaccination</a></li>
-                        <li><a href="appoinment.php"><i class="fas fa-calendar-plus"></i> Book Appointment</a></li>
-                        <li><a href="register.php"><i class="fas fa-user-plus"></i> Register Your Pet</a></li>
-                        <li><a href="view_pets.php"><i class="fas fa-paw"></i> View Registered Pets</a></li>
+                        <li><a href='main.php'><i class='fas fa-home'></i> Home</a></li>
+                        <li><a href='adoption.php'><i class='fas fa-heart'></i> Pet Adoption</a></li>
+                        <li><a href='vaccination.php'><i class='fas fa-syringe'></i> Vaccination</a></li>
+                        <li><a href='appoinment.php'><i class='fas fa-calendar-plus'></i> Book Appointment</a></li>
+                        <li><a href='register.php'><i class='fas fa-user-plus'></i> Register Your Pet</a></li>
+                        <li><a href='view_pets.php'><i class='fas fa-paw'></i> View Registered Pets</a></li>
                     </ul>
                 </nav>
             </header>
@@ -89,17 +90,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
             <title>Appointment Booking - Time Conflict</title>
             <link rel='stylesheet' href='../css/vet_app.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
         </head>
         <body>
             <header>
                 <h1>Happy Paws Veterinary Clinic</h1>
                 <nav>
                     <ul>
-                        <li><a href='main.php'>Home</a></li>
-                        <li><a href='adoption.php'>Pet Adoption</a></li>
-                        <li><a href='vaccination.php'>Vaccination</a></li>
-                        <li><a href='appoinment.php'>Book Appointment</a></li>
-                        <li><a href='register.php'>Register Your Pet</a></li>
+                        <li><a href='main.php'><i class='fas fa-home'></i> Home</a></li>
+                        <li><a href='adoption.php'><i class='fas fa-heart'></i> Pet Adoption</a></li>
+                        <li><a href='vaccination.php'><i class='fas fa-syringe'></i> Vaccination</a></li>
+                        <li><a href='appoinment.php'><i class='fas fa-calendar-plus'></i> Book Appointment</a></li>
+                        <li><a href='register.php'><i class='fas fa-user-plus'></i> Register Your Pet</a></li>
+                        <li><a href='view_pets.php'><i class='fas fa-paw'></i> View Registered Pets</a></li>
                     </ul>
                 </nav>
             </header>
@@ -137,17 +140,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
             <title>Appointment Booked Successfully</title>
             <link rel='stylesheet' href='../css/vet_app.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
         </head>
         <body>
             <header>
                 <h1>Happy Paws Veterinary Clinic</h1>
                 <nav>
                     <ul>
-                        <li><a href='main.php'>Home</a></li>
-                        <li><a href='adoption.php'>Pet Adoption</a></li>
-                        <li><a href='vaccination.php'>Vaccination</a></li>
-                        <li><a href='appoinment.php'>Book Appointment</a></li>
-                        <li><a href='register.php'>Register Your Pet</a></li>
+                        <li><a href='main.php'><i class='fas fa-home'></i> Home</a></li>
+                        <li><a href='adoption.php'><i class='fas fa-heart'></i> Pet Adoption</a></li>
+                        <li><a href='vaccination.php'><i class='fas fa-syringe'></i> Vaccination</a></li>
+                        <li><a href='appoinment.php'><i class='fas fa-calendar-plus'></i> Book Appointment</a></li>
+                        <li><a href='register.php'><i class='fas fa-user-plus'></i> Register Your Pet</a></li>
+                        <li><a href='view_pets.php'><i class='fas fa-paw'></i> View Registered Pets</a></li>
                     </ul>
                 </nav>
             </header>
@@ -187,17 +192,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
             <title>Appointment Booking - Error</title>
             <link rel='stylesheet' href='../css/vet_app.css'>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
         </head>
         <body>
             <header>
                 <h1>Happy Paws Veterinary Clinic</h1>
                 <nav>
                     <ul>
-                        <li><a href='main.php'>Home</a></li>
-                        <li><a href='adoption.php'>Pet Adoption</a></li>
-                        <li><a href='vaccination.php'>Vaccination</a></li>
-                        <li><a href='appoinment.php'>Book Appointment</a></li>
-                        <li><a href='register.php'>Register Your Pet</a></li>
+                        <li><a href='main.php'><i class='fas fa-home'></i> Home</a></li>
+                        <li><a href='adoption.php'><i class='fas fa-heart'></i> Pet Adoption</a></li>
+                        <li><a href='vaccination.php'><i class='fas fa-syringe'></i> Vaccination</a></li>
+                        <li><a href='appoinment.php'><i class='fas fa-calendar-plus'></i> Book Appointment</a></li>
+                        <li><a href='register.php'><i class='fas fa-user-plus'></i> Register Your Pet</a></li>
+                        <li><a href='view_pets.php'><i class='fas fa-paw'></i> View Registered Pets</a></li>
                     </ul>
                 </nav>
             </header>
