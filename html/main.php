@@ -30,6 +30,7 @@
         <li><a href="vaccination.php"><i class="fas fa-syringe"></i> Vaccination</a></li>
         <li><a href="appoinment.php"><i class="fas fa-calendar-plus"></i> Book Appointment</a></li>
         <li><a href="register.php"><i class="fas fa-user-plus"></i> Register Your Pet</a></li>
+        <li><a href="view_pets.php"><i class="fas fa-paw"></i> View Registered Pets</a></li>
       </ul>
     </nav>
   </header>
